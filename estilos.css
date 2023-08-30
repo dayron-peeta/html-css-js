@@ -5,3 +5,29 @@
             font-size: 2rem;
             color: rebeccapurple;
         }
+
+        .bold{
+            font-weight: bold;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .active{
+            color: white;
+            background-color: black;
+            font-size: 3rem;
+        }
+
+/* para hacer que al seleccionar una sección de la pagina por el desplazamiento por anclas se vea suave el scroll  */
+        html{
+            scroll-behavior: smooth;
+        }
+
+        a{
+            background-color: yellow;
+        }
+        p{
+            background-color: yellow;
+        }
