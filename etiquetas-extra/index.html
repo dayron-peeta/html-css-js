@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas extra</title>
+</head>
+<body>
+    <h1>Etiquetas extra</h1>
+    <p>para meter imágenes en bloque utiliza figure, también puedes usar figcaption para agregarle un pie de foto</p>
+    <figure>
+        <img src="./assets/`logo+fondo.png" width="150">
+        <figcaption>logo con base </figcaption>
+    </figure>
+    <figure>
+        <img src="./assets/`logo+fondo - copia.png" width="150">
+        <figcaption>logo con base 2(esta etiqueta es opcional) </figcaption>
+    </figure>
+
+    <p>PICTURE permite proveer diferentes versiones se una imagen dependiendo del dispositivo. Da prioridad a la imagen de source, pero si no puede mostrará la img , puedo tener varias sources pero debo ordenarlas por el minwidth de mayor a menor</p>
+    <picture>
+        <source srcset="./assets/ubicación.png" media="(min-width:900px)">
+        <source srcset="./assets/`logo+fondo.png" media="(min-width:500px)">
+        <img src="./assets/proceso 2 vapor de ozono.png alt="">
+    </picture>
+    
+</body>
+</html>
