@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+    <!-- el action del form determina a donde se va a enviarla información del formulario -->
+    <h1>Aplica al trabajo</h1>
+    <form action="">
+        <label for="nombre">Ingresa tu nombre</label>
+        <input type="text" name="" id="nombre" placeholder="ingresa tu nombre" maxlength="10" minlength="3"  >
+        <br><br>
+
+        <label for="email">Ingresa tu email</label>
+        <input type="email" name="" id="email" placeholder="ingresa tu email"  required >
+        <br><br>
+
+        <label for="password">Ingresa tu password</label>
+        <input type="password" name="" id="password" placeholder="ingresa tu password"  required >
+        <br><br>
+
+        <label for="color">Ingresa tu color</label>
+        <input type="color" name="" id="color" placeholder="ingresa tu color"  required >
+        <br><br>
+
+        <label for="fecha">Ingresa tu fecha</label>
+        <input type="date" name="" id="fecha" placeholder="ingresa tu fecha"  required >
+        <br><br>
+
+        <label for="number">Ingresa tu número</label>
+        <input type="number" name="" id="number" placeholder="ingresa tu número"  required >
+        <br><br>
+
+        <label for="pais" class="label-strong">Selecciona tu país</label>
+        <select id="pais">
+            <option value="MX">México</option>
+            <option value="ARG">Argentina</option>
+            <option value="BR">Brasil</option>
+            <option value="NO" selected>Otro</option>
+        </select>
+        <br><br>
+
+        <!-- dándole el mismo name a los radio se selecciona solo uno de ellos -->
+        <label for="horario" class="label">Selecciona tu horario</label>
+            <label>
+                <input type="radio" name="horario" id="">Matutino
+            </label>
+            <label>
+                <input type="radio" name="horario" id="">Nocturno
+            </label>
+            <label>
+                <input type="radio" name="horario" id="">Mixto
+            </label>
+        <br><br>
+
+        <h3>Acepta términos</h3>
+            <label>
+                <input type="checkbox" name="" id="">Acepta términos y condiciones
+            </label>
+        <br><br>
+
+        <h3>Déjame tus comentarios</h3>
+        <textarea name="" id="" cols="50" rows="5"></textarea>
+        <br><br>
+
+        <input type="reset" value="Borrar formulario">
+        <input type="submit" >
+        
+    </form>
+</body>
+</html>

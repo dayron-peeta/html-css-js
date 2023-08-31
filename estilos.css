@@ -26,8 +26,17 @@
         }
 
         a{
-            background-color: yellow;
+            background-color: rgb(0, 149, 255);
         }
         p{
-            background-color: yellow;
+            background-color: rgb(0, 26, 255);
+        }
+
+        table, th, td{
+            border: 1px solid;
+        }
+
+        .label-strong{
+            font-weight: bold;
+            font-size: large;
         }
