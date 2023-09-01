@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="title" id="title">Cascada CSS</h1>
+    <p class="paragraph" id="paragraph"> Css se basa en dos reglas para determinar que estilos se van a aplicar, la <strong>cascada</strong>  y la <strong>especificidad</strong> . </p>
+    <p>Especificidad(método principal de CSS) tiene mas importancia que la cascada: es el valor que se le da a los selectores en CSS </p>
+    <p>cascada: siempre se aplicarán los últimos estilos en ser declarados, tanto a nivel de selectores como a nivel de propiedades, pero solo si se tienen especificidades iguales</p>
+
+    <p>!important y los estilos en linea son mala práctica porque rompen la especificidad</p>
+    
+    <p>La herencia es reversible. Si doy una propiedad a todos los elementos del body todos la tomarán a excepción de los elementos específicos a los que les de otro valor</p>
+
+    <article class="container">
+        <p>no todas las propiedades de css se heredan
+            (borde, padding, width, height )
+        </p>
+        <p>inherit obliga al elemento a heredar ese valor de su padre</p>
+    </article>
+
+</body>
+</html>

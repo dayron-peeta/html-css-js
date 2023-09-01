@@ -1,0 +1,56 @@
+/*comentario*/
+
+h1{
+    color: rgb(7, 65, 32);
+    /* color: purple; */
+}
+
+/* selector de tipo, de nombre o de etiqueta */
+body{
+    font-family: Helvetica;
+}
+
+h2{
+    color: seagreen;
+    font-style: italic;
+}
+
+/* li{
+    font-size: 20px;
+    list-style: square;
+} */
+
+/* selector de clase */
+.subtitle{
+    text-align: center;
+    background-color: teal;
+    color: white;
+}
+
+/* selectores de ID */
+#title{
+    background-color: rgb(29, 192, 213);
+    padding: 20px 10px;
+    font-family: cursive;
+    text-align: center;
+}
+
+/* selectores combinadores */
+
+/* combinadores descendientes */
+/* los h2 que estén dentro de un section */
+.section h2{
+    background-color: crimson;
+}
+/* solo modifica los li que estén dentro  de un ul */
+ul li{
+    font-size: 20px;
+    list-style: square;
+}
+/* combinador de hijos directos */
+/* solo se puede seleccionar directamente desde el padre */
+.section > ul{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}

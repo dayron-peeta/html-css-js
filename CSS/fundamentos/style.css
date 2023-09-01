@@ -1,0 +1,56 @@
+/* La cascada */
+
+/*
+Especificidad 1
+-selector de tipo
+-pseudoelementos
+
+Especificidad 10
+-selector de clase
+-selector de atributo
+-pseudoclases
+
+Especificidad 100
+-selector de ID
+
+(Rompes la especificidad con !important)
+*/
+.title{
+    color: violet;
+}
+
+h1 {
+    color: rgb(208, 250, 19);
+    font-family: Arial;
+}
+
+#title{
+    color: #ca1c87;
+}
+
+h1 {
+    color: purple;
+    color: seagreen !important;
+    font-family: cursive;
+}
+
+body{
+    font-family: monospace;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+/* inherit obliga al elemento a heredar ese valor de su padre */
+p{
+    color: black;
+    border: inherit;
+    padding: inherit;
+}
