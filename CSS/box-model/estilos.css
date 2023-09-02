@@ -1,0 +1,39 @@
+h1{
+    background-color: seagreen;
+    color: white;
+
+    /* define el ancho del elemento */
+    width: auto;
+    width: 400px;
+    width: max-content;
+
+    /* define el ancho max,el elemento no puede sobrepasar este ancho */
+    max-width: 480px ;
+    /* define el ancho min,el elemento no puede medir menos q este ancho */
+    min-width: 100px;
+
+    /* define el alto del elemento */
+    height: 80px;
+    /* define el ancho min,el elemento no puede medir menos q este alto */
+    min-height: 50px;
+    /* define el ancho max,el elemento no puede sobrepasar este alto */
+    max-height: 500px;
+
+    /* esconder todo lo que se desborde del contenedor */
+    overflow: hidden;
+
+    /* espacio de relleno SHORTHUG  */
+    padding: 20px;
+    /* tambien se pueden definir independientes */
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    /* incluso en la misma propiedad ARRIBA, DERECHA, ABAJO, IZQUIERDA */
+    padding: 20px 20px 20px 20px;
+
+    border-color: blueviolet;
+    /* thin, medium y thick son valores posibles tambien */
+    border-width: 10px;
+    border-style: solid;
+}   
