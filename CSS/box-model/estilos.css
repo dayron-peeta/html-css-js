@@ -1,39 +1,131 @@
-h1{
+/* selector universal, lo que se defina acá se  aplicará a todos los elementos */
+*{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
     background-color: seagreen;
     color: white;
 
-    /* define el ancho del elemento */
-    width: auto;
-    width: 400px;
-    width: max-content;
 
-    /* define el ancho max,el elemento no puede sobrepasar este ancho */
-    max-width: 480px ;
-    /* define el ancho min,el elemento no puede medir menos q este ancho */
-    min-width: 100px;
+    border-color: rgb(47, 17, 75);
+    border-width: 10px;
+    border-style: dashed double;
 
-    /* define el alto del elemento */
-    height: 80px;
-    /* define el ancho min,el elemento no puede medir menos q este alto */
-    min-height: 50px;
-    /* define el ancho max,el elemento no puede sobrepasar este alto */
-    max-height: 500px;
+    width: 380px;
+    height: 140px;
+    padding: 20px;
 
-    /* esconder todo lo que se desborde del contenedor */
+
+    text-align: center;
+
+    margin: 30px auto;
+    display: block;
+
+
+
+}
+
+p{
+    width: 300px;
+    background-color: firebrick;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0px auto;
+
+}
+
+.cta{
+    background-color: tomato;
+    color: white;
+    padding: 20px;
+
+    width: 200px;
+    margin: 10px auto;
+    display: block;
+
+}
+
+.overflow{
     overflow: hidden;
+    /* esconder todo lo que se desborde del contenedor */
+}
 
+.color{
+    background-color: rgb(179, 218, 25);
+    color: rgb(23, 22, 22);
+}
+
+
+.size{
+    width: auto;
+    /* define el ancho del elemento */
+    /* 400px y max-content son también posibles valores */
+
+    max-width: 480px;
+    /* define el ancho max,el elemento no puede sobrepasar este ancho */
+
+    min-width: 100px;
+    /* define el ancho min,el elemento no puede medir menos q este ancho */
+
+    height: 80px;
+    /* define el alto del elemento */
+
+    max-height: 500px;
+    /* define el ancho max,el elemento no puede sobrepasar este alto */
+
+    min-height: 50px;
+    /* define el ancho min,el elemento no puede medir menos q este alto */
+
+}
+
+.padding {
     /* espacio de relleno SHORTHUG  */
     padding: 20px;
-    /* tambien se pueden definir independientes */
+    /* también se pueden definir independientes */
     padding-top: 20px;
     padding-right: 10px;
     padding-bottom: 20px;
     padding-left: 10px;
     /* incluso en la misma propiedad ARRIBA, DERECHA, ABAJO, IZQUIERDA */
     padding: 20px 20px 20px 20px;
+    /* Si a la propiedad padding le paso un solo valor se aplica a los 4 laterales, si le paso  3  el 1ro se aplica arriba, el 2do a ambos lados y el 3ro abajo, si le paso 2, el 1ro se aplica arriba y abajo y el 2do a los lados y si le paso 4 , el 1ro arriba, el 2do a la derecha, el 3ro abajo y el 4to a la izquierda */
+}
 
-    border-color: blueviolet;
-    /* thin, medium y thick son valores posibles tambien */
+.border{
+    /* usa la misma lógica que padding y border arriba, derecha, abajo, izquierda */
+    margin: 20px 30px 20px 30px;
+    /* y también se puede hacer de forma independiente para cada uno de los lados */
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.border {
+    /* el border  define ancho estilo y color */
+    border: 5px dashed orange;
+    /* aunque también se pueden definir de forma independiente */
     border-width: 10px;
-    border-style: solid;
-}   
+    border-style: dotted;
+    border-color: aqua;
+    /* thin, medium y thick son width posibles también */
+    /* dotted - puntos
+    dashed - guiones
+    solid - linea sólida
+    double - dos lineas sólidas
+    groove - ranurado en 3d 
+    ridge - estriado en 3d  
+    son style posibles también*/
+}
+
+.margin{
+    /* el valor auto solo se puede aplicar al margen derecho o izquierdo */
+    margin: 20px auto;
+    /* para usar esta propiedad debe estar definido display tipo block y un width  */
+    display: block;
+    width: 300px;
+}

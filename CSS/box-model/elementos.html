@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="Especificidad">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+    <style>
+        h2, p{
+            background-color: seagreen;
+            color: white;
+            padding: 20px;
+
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        a, span {
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 10px auto;
+            width: 150px;
+            height: 30px;
+            display: inline-block;
+            
+        }
+        .center{
+            width: 400px;
+            height: 30px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Soy un elemento bloque</h2>
+    <p>para saber si un elemento es bloque o línea podemos inspeccionar y ver que valor tiene en la propiedad display desde Styles o desde Computed. Además de eso, podemos diferenciarlos porque los elementos en bloque generan un salto de línea <br> <br> Si el  elemento no es bloque no se podrán aplicar las propiedades  width y height, y el margen o borde se sobrepondrá a otros elementos cercanos <br> <br>Si establecemos la propiedad display:inline-block podemos aplicar correctamente los estilos y los elementos seguirán posicionándose a continuación y no en una nueva línea</p>
+
+    <div class="center">
+        <a href="#">soy un elemento línea</a>
+        <span>soy un elemento línea</span>
+    </div>
+    
+</body>
+</html>

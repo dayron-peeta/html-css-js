@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores & Fondos</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 class="title">Colores</h1>
+
+    <p>Al pasar el mouse sobre un color en css este muestra su código RGB. y si hacemos click en la barra superior
+        estaremos alternando entre las diferentes representaciones <br>Los colores pueden representarse por:</p>
+    <ol>
+        <li>palabra clave</li>
+        <p> aquí puedes ver la palabra clave que representa un color <a
+                href="https://htmlcolorcodes.com/">https://htmlcolorcodes.com/</a> </p>
+        <li>valores rgb</li>
+        <p>rgb admite valores en cada posición entre 0-255. <br> Se define con 3 valores, color: rgb(red, green,
+            blue);<br> y también podemos añadir un 4to valor del 0 al 1 que define la transparencia, siendo 1 sólido y 0
+            totalmente transparente</p>
+        <li>hexadecimal </li>
+        <p>Se representa por el símbolo # seguido de 6 valores, los dso 1ros representan al rojo, los dos centrales al
+            verde y los dos últimos al azul, igual que el código rgb. Los valores van del 0 a la letra f. Se pueden
+            añadir dos valores adicionales al final que también representarán la transparencia</p>
+    </ol>
+    <p>
+        Generador de paletas de colores <a href="https://coolors.co/">https://coolors.co/</a>
+    </p>
+    <p> definiendo la propiedad background-size: si damos un valor lo asumirá de alto y ancho, o si damos dos serán uno
+        para el ancho y el otro para el alto, también definiendo el valor cover la imagen se ajustará al contenedor , y
+        con el valor contain se verá la imagen completa pero no se adaptará al contenedor <br> Con la propiedad
+        background-position: center; estaremos centrando la imagen</p>
+    <h2 class="logo-img">Probando imagen de fondo </h2>
+
+    <h3> probando mosaico svg de fondo</h3>
+    <div class=" background-svg"> </div>
+    <p>esto trae por defecto la configuración de background-repeat: repeat, pero si lo cambiamos a repeat-x para q solo
+        se repita horizontalmente, repeat y para q solo se repita verticalmente o no-repeat para q salga solo una</p>
+
+    <h3 class="gradient-background">Gradiente de fondo</h3>
+    <p>podemos usar el valor linear gradient en background-image, así: background-image: linear-gradient(purple, white);
+        <br> y pasarle dos colores para crear el efecto gradiente
+    </p>
+
+    <h3>Imagen de fondo con gradiente de colores</h3>
+    <p class="gradient-image"> </p>
+    <p>también podemos definir los valores de linear-gradient con colores transparentes, y separado por una coma
+        establecer la imagen para lograr este efecto <br> background-image:linear-gradient(rgba(0, 128, 0, 0.58),
+        rgba(255, 0, 255, 0.571)), url('./logo\ PMS.png'); </p>
+
+    <main class="main">
+        <h1 class="main__title">Sección con BMS <br> propiedades para los textoooooooooooooooooooooooos</h1>
+        <p class="main__paragraph">h1 <br> letter-spacing: 2px; permite definir la separación entre letras <br>
+            word-spacing: 5px; permite definir la separación entre palabras <br> overflow-wrap: break-word; rompe las
+            palabras para evitar que se desborden <br> text-transform: uppercase; permite transformar el texto (todas a
+            mayúsculas), también se puede definir lowercase para ponerlas todas en minúsculas y capitalize que hace que
+            cada palabra comience en mayúscula <br> text-align: center; permite centrar el texto, también se le pueden
+            dar los valores start para alinearlo a la izquierda o end para alinearlo a la derecha <br> font-size: 30px;
+            para controlar el tamaño del texto <br> </p>
+
+        <p class="main__paragraph main__paragraph--second">
+            p <br>
+            acá también se usa text align y font size <br>
+            line-height: 1; determina el alto de la línea ,(aquí acepta unidades enteras o píxeles, si multiplicamos las
+            unidades enteras por el font size obtenemos el valor en píxeles) <br> a <br> text-decoration: none; se puede usar para quitar el subrayado de los enlaces 
+        </p>
+        <a href="#" class="main__cta">Entra ahora</a>
+    </main>
+
+    <p>al definir font-family: cursive, Helvetica, sans-serif; estamos garantizando que si una de estas fuentes está mal
+        escrita, o no está instalada en la pc, entonces tomará la 2da definida <br> no todas las pc tienen las mismas
+        fuentes instaladas , para evitar que tu diseño no se vea tal cual lo definiste tú, podemos cargar la fuente
+        directo de <a href="
+            https://fonts.google.com/">fonts.google.com</a>, seleccionar el tipo de letra y los pesos , luego copiar el
+        html y agregarlo en el head de la página <br> Luego, para especificar ese font family la misma web de google
+        te pone el ejemplo de como configurarlo en css </p>
+
+</body>
+
+</html>
