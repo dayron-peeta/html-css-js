@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child relative">Relative</div>
+        <div class="child absolute">Absolute</div>
+        <div class="child fixed">Fixed</div>
+    </div>
+
+    <p class="paragraph"> Los elementos traen por defecto position:static. <br>El flujo del navegador posiciona los elementos a la izquierda y los nuevos bloques debajo, si creamos muchos elementos inline se colocaran uno al lado del otro alineados a la izquierda y al acabarse el espacio comienzan en una nueva línea debajo <br><br></p>
+
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+    <a href="">hola</a>
+
+    <p class="paragraph">  Al establecer position: relative; podemos establecer una posición relativa a la posición original del elemento, pudiendo desplazarlo hacia arriba, abajo a los lados (desbloquea los atributos top, bottom, right y left) esto va a mover el elemento pero deja su espacio original reservado(solo lo mueve a él) .  <br><br> position: absolute; también desbloquea a top, bottom, right y left. esta propiedad va a sacar al elemento del flujo y lo va a posicionar absolutamente a su padre(contenedor) más cercano que tenga un position diferente a static, a la distancia que indiquemos en top, bottom, right y left. SI LE DAMOS A .PARENT POSITION:RELATIVE EL ELEMENTO POSICIONADO EN ABSOLUTO ENTONCES VIVIRÁ DENTRO DE ESTE CONTENEDOR <br><br> position: fixed; también desbloquea a top, bottom, right y left y sacar al elemento del flujo y lo va a posicionar absolutamente al viewport <br><br> También podemos usar valores negativos en estos atributos <hr>
+    </p>
+
+    <h2>Z-index o contexto de apilamiento</h2>
+    <p class="paragraph">  estas 3 propiedades desbloquean el contexto de apilamiento {z-index}  (permite definir que elemento estará por encima de otro en caso que ocupen un mismo espacio) este valor viene en auto, y en ese caso tendrá prioridad el último elemento definido en el html (a esto se le pasa un número entero y tendrá prioridad el mayor)</p>
+
+    <div class="parentz">
+        <div class="child relativez">Relativez</div>
+        <div class="child absolutez">Absolutez</div>
+        <div class="child fixedz">Fixedz</div>
+    </div>
+    
+</body>
+</html>
