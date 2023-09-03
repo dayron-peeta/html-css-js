@@ -1,14 +1,28 @@
 /*color, background-color */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Poppins', sans-serif;}
 .main{
     height: auto;
     background-image:linear-gradient(rgba(10, 84, 10, 0.58), rgba(102, 16, 102, 0.571)), url('./logo\ PMS.png');
     background-size: cover;
-    padding: 800px 80px;
+    padding: 80px 80px;
     color: white;
 }
 
+.main__circle{
+    width: 100px;
+    height: 100px;
+    background-image: url('./logo\ PMS.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    margin: auto;
+}
 .main__title{
     background-color: #00800012;
     letter-spacing: 2px;
@@ -21,6 +35,7 @@ body{
     /* text-align: start; */
     /* text-align: end; */
     font-size: 30px;
+    font-weight: 900;
 }
 
 .main__paragraph{
@@ -30,14 +45,21 @@ body{
     line-height: 1;
     font-size: 18px;
     text-shadow: rgb(36, 1, 36); 
+    margin: 20px 0;
 }
 
+.main__paragraph--second{
+    font-weight: 400;
+    font-style: italic;
+}
 .main__cta{
     display: inline-block;
     background-color: orange;
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 20px 60px;
+    /* permite redondear el borde de contenedores 50px es el mayor valor */
+    border-radius: 10px;
 }
 
 .title{

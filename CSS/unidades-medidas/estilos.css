@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif
+    ;
+}
+
+.article__title{
+
+}
+
+.img{
+    width: 300px;
+    /*puede establecerse en  px,cm,mm,pt*/
+    
+}
