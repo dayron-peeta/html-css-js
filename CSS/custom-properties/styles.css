@@ -1,0 +1,21 @@
+/* custom properties (propiedades personalizadas) o variables de css*/
+
+:root{
+    --color-primario: green ;
+    --bordes: 3px dashed black;
+    --fuente: Arial;
+}
+.title{
+    color: var(--color-primario);
+    border: var(--bordes);
+}
+
+.paragraph{
+    color: var(--color-primario);
+    font-style: var(--fuente);
+}
+
+.cta{
+    border: var(--bordes);
+}
+
