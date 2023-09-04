@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    margin: 40px auto;
+    outline: 4px solid black;
+
+    display: flex;
+    /* propiedades del contenedor */
+    flex-direction: row;
+    /* row, row-reverse, column, column-reverse */
+
+     /*flex-wrap: wrap;*/ /*define el comportamiento de los flex-items cuando su tamaño sumado rebasa el tamaño del main axis del flex-container */
+    /* nowrap(los elementos se comprimen para caber en el contenedor), wrap(se crean nuevas líneas para que los elementos no se compriman), wrap-reverse (igual que wrap pero comienza desde abajo hacia arriba)  */
+
+    /*justify-content: flex-start;*/ /* alinear a los elementos en el main axis */
+    /* flex-start(de inicio a fin) , flex-end(de fin a inicio), center(los centra), space-between(reparte el espacio y se pegan a los bordes), space-around (reparte el espacio y no se pegan a los bordes), space-evenly (reparte el espacio EQUITATIVAMENTE y no se pegan a los bordes)   */
+
+    /*align-items: center;*/ /* maneja el espacio disponible en el cross-axis */
+    /* stretch (los elementos sin height definido se estiran ), flex-start (manda a los elementos al principio) flex-end (manda a los elementos al final),  center (los centra), baseline (se alinean a su linea base)*/
+
+    /*align-content: space-evenly;*/ /* también modifica el cross-axis pero solo funciona cuando hay más de una linea o columna*/
+    /*stretch (si no tiene height los elementos se estiran),
+    flex-start (EMPAQUETA los elementos y los manda al principio), flex-end(EMPAQUETA los elementos y los manda al final), center (EMPAQUETA los elementos y los centra), space-between(envía el 1ro al principio y el ultimo al final, y reparte el espacio restante) , space-around (reparte el espacio y no se pegan a los bordes), space-evenly (reparte el espacio EQUITATIVAMENTE y no se pegan a los bordes) */
+}
+
+.child{
+    width: 80px;
+    height: 80px;
+
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.child--1{
+    background-color: indigo;
+    /* propiedades de los flex items */
+    order: 5;
+    /*lo ordena de menor a mayor y todos traen por defecto 0 (mientras sea o0 se ordenan según el html)*/
+    flex-grow: 0; /*determina el factor de crecimiento*/
+    /*su valor por defecto es 0, y le dará el espacio  al que tenga mayor valor*/
+    flex-shrink: 1; /*determina el factor de encogimiento*/
+    /*su valor por defecto es 1, y le quitará más espacio  al que tenga mayor valor (si a alguno se le establece el valor en 0 no se encogerá nada)*/
+    flex-basis: inherit; /*determina el tamaño de los flex items en el axis y tiene  mayor prioridad que el weight y el height  (establece ancho si está en fila o alto si está en columna)*/
+    align-self: center ; /*alinea al elemento en el cross axis*/
+    /* stretch (los elementos sin height definido se estiran ), flex-start (manda a los elementos al principio) flex-end (manda a los elementos al final),  center (los centra), baseline (se alinean a su linea base)*/
+}
+.child--2{
+    background-color: deeppink;
+    /* font-size: 4rem; */
+}
+.child--3{
+    background-color: royalblue;
+}
+.child--4{
+    background-color: seagreen;
+}
