@@ -40,5 +40,23 @@
         
         </section>
     </main>
+
+    <p>Con CSS-Grid podemos definir en un contenedor <br>
+        .gallery{ <br>
+        display: grid; <br>
+        grid-template-areas:  <br>
+        "img1 img1 img2 img3" <br>
+        "img1 img1 img4 img4" <br>
+        "img5 img5 img6 img7" <br>
+        "img5 img5 img8 img8"; <br>
+        } <br>
+        para crear una especie de mapeo del espacio, y luego en sus items (hijos) <br>
+        .gallery__pic--g1{ <br>
+            grid-area: img1; <br>
+        } <br> 
+        para definir el area que queremos que ocupe ese elemento dentro del contenedor <br><br>
+        .gallery__pic::after{} es un pseudo-elemento que permite crear elementos con css sin usar html (se crea como hijo de la clase referenciada) */ <br>
+        .gallery__pic:hover::after{}  es una pseudo-clase que detecta cuando paso el mouse sobre un elemento y afecta el pseudo-elemento referenciado al  final*/
+    </p>
 </body>
 </html>
