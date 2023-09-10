@@ -1,0 +1,35 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+.nav{
+    width: 95%;
+    
+}
+
+
+.menu__html{
+    background-color: red;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu__css{
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu__topic{
+    display: inline-block;
+    list-style: none;
+}
+.menu__link{
+    color: white;
+    text-decoration: none;
+    
+}
