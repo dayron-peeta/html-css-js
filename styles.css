@@ -102,13 +102,13 @@ body {
     align-items: center;
 }
 
-.link {
+.cont__contents--elem {
     list-style: none;
     display: inline-block;
     padding: 30px 20px;
 }
 
-.link__l {
+.cont__contents--link {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: 700;
