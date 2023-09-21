@@ -398,4 +398,11 @@ body {
     .css {
         flex-direction: column;
     }
+
+    .css-logo {
+        width: 100%;
+    }
+    .html-logo {
+        width: 100%;
+    }
 }
