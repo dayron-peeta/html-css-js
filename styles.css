@@ -166,7 +166,7 @@ body {
 
 
 /* div HTML */
-.block {
+.card {
     border-radius: 40px;
     display: flex;
     width: 90%;
@@ -189,7 +189,7 @@ body {
 
 /* //////////////////////////////// */
 
-.block_html {
+.card_html {
     background-color: #d53921;
 }
 
@@ -268,7 +268,7 @@ body {
 }
 
 /* div CSS */
-.block_css {
+.card_css {
     background-color: #264de4;
 }
 
@@ -324,7 +324,7 @@ body {
         text-align: start;
     }
 
-    .block {
+    .card {
         padding: 10px;
         gap: 10px;
     }
@@ -356,39 +356,41 @@ body {
 
 }
 
-/* //REVIEW */
 /* Breakpoint mobile Responsive max425px */
 @media(max-width:425px) {
     body {
         padding: 10px 0px;
         gap: 10px;
     }
-
+    /*header*/
     .topic-info {
         justify-content: space-between;
         gap: 0;
         /**/
     }
 
-    .block_html {
+    /*html*/
+    .card_html {
         flex-direction: column;
     }
 
-    .block_css {
+    .card_css {
         flex-direction: column;
     }
 
-    .css-logo {
+    .logo {
         width: 100%;
+        flex-direction: row;
     }
 
-    .html-logo {
-        width: 100%;
+    .text-wrapper {
+        font-size: var(--h-6-font-size);
+        font-weight: var(--h-font-weight-Regular);
     }
 
     .nav_degradado {
         width: 100%;
-        padding: 10px;
+        padding: 30px 10px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
