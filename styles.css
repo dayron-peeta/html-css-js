@@ -1,9 +1,11 @@
 :root {
+    /*COLORS*/
     --black-100: rgba(231, 231, 231, 1);
     --black-200: rgba(209, 209, 209, 1);
     --black-300: rgba(176, 176, 176, 1);
     --black-400: rgba(136, 136, 136, 1);
-    --black-50: rgba(246, 246, 246, 1);
+    --black-50: #f6f6f6;
+    --black-50-back: rgba(246, 246, 246, 0.2);
     --black-500: rgba(109, 109, 109, 1);
     --black-600: rgba(93, 93, 93, 1);
     --black-700: rgba(79, 79, 79, 1);
@@ -33,67 +35,13 @@
     --cerulean-blue900: rgba(33, 49, 135, 1);
     --cerulean-blue950: rgba(25, 32, 82, 1);
     --default-background: rgba(255, 255, 255, 1);
-    --h-1-font-family: "Archivo-Bold", Helvetica;
-    --h-1-font-size: 61px;
-    --h-1-font-style: normal;
-    --h-1-font-weight: 700;
-    --h-1-letter-spacing: 0px;
-    --h-1-line-height: 120.00000476837158%;
-    --h-2-font-family: "Archivo-Regular", Helvetica;
-    --h-2-font-size: 49px;
-    --h-2-font-style: normal;
-    --h-2-font-weight: 400;
-    --h-2-letter-spacing: 0px;
-    --h-2-line-height: 120.00000476837158%;
-    --h-3-font-family: "Archivo-Regular", Helvetica;
-    --h-3-font-size: 39px;
-    --h-3-font-style: normal;
-    --h-3-font-weight: 400;
-    --h-3-letter-spacing: 0px;
-    --h-3-line-height: 120.00000476837158%;
-    --h-4-font-family: "Archivo-Regular", Helvetica;
-    --h-4-font-size: 31px;
-    --h-4-font-style: normal;
-    --h-4-font-weight: 400;
-    --h-4-letter-spacing: 0px;
-    --h-4-line-height: 120.00000476837158%;
-    --h-5-font-family: "Archivo-Bold", Helvetica;
-    --h-5-font-size: 25px;
-    --h-5-font-style: normal;
-    --h-5-font-weight: 700;
-    --h-5-letter-spacing: 0px;
-    --h-5-line-height: 120.00000476837158%;
-    --h-6-font-family: "Archivo-Regular", Helvetica;
-    --h-6-font-size: 20px;
-    --h-6-font-style: normal;
-    --h-6-font-weight: 400;
-    --h-6-letter-spacing: 0px;
-    --h-6-line-height: 120.00000476837158%;
-    --h-7-font-family: "Archivo-Regular", Helvetica;
-    --h-7-font-size: 16px;
-    --h-7-font-style: normal;
-    --h-7-font-weight: 400;
-    --h-7-letter-spacing: 0px;
-    --h-7-line-height: 120.00000476837158%;
-    --h-8-font-family: "Archivo-Regular", Helvetica;
-    --h-8-font-size: 13px;
-    --h-8-font-style: normal;
-    --h-8-font-weight: 400;
-    --h-8-letter-spacing: 0px;
-    --h-8-line-height: 120.00000476837158%;
-    --h-9-font-family: "Archivo-Regular", Helvetica;
-    --h-9-font-size: 10px;
-    --h-9-font-style: normal;
-    --h-9-font-weight: 400;
-    --h-9-letter-spacing: 0px;
-    --h-9-line-height: 120.00000476837158%;
     --orange-100: rgba(253, 233, 215, 1);
     --orange-200: rgba(250, 207, 174, 1);
     --orange-300: rgba(247, 172, 122, 1);
     --orange-400: rgba(243, 128, 68, 1);
     --orange-50: rgba(254, 245, 238, 1);
     --orange-500: rgba(240, 101, 41, 1);
-    --orange-600: rgba(225, 69, 21, 1);
+    --orange-600: rgb(225, 69, 21);
     --orange-700: rgba(186, 50, 20, 1);
     --orange-800: rgba(148, 42, 24, 1);
     --orange-900: rgba(119, 37, 23, 1);
@@ -109,6 +57,61 @@
     --pomegranate-800: rgba(141, 35, 31, 1);
     --pomegranate-900: rgba(114, 32, 28, 1);
     --pomegranate-950: rgba(61, 13, 13, 1);
+
+    /*Fonts*/
+    --h-1-font-family: "Archivo-Bold", Helvetica;
+    --h-1-font-size: 61px;
+    --h-1-font-style: normal;
+    --h-1-letter-spacing: 0px;
+    --h-1-line-height: 120.00000476837158%;
+    --h-2-font-family: "Archivo-Regular", Helvetica;
+    --h-2-font-size: 49px;
+    --h-2-font-style: normal;
+    --h-2-letter-spacing: 0px;
+    --h-2-line-height: 120.00000476837158%;
+    --h-3-font-family: "Archivo-Regular", Helvetica;
+    --h-3-font-size: 39px;
+    --h-3-font-style: normal;
+    --h-3-letter-spacing: 0px;
+    --h-3-line-height: 120.00000476837158%;
+    --h-4-font-family: "Archivo-Regular", Helvetica;
+    --h-4-font-size: 31px;
+    --h-4-font-style: normal;
+    --h-4-letter-spacing: 0px;
+    --h-4-line-height: 120.00000476837158%;
+    --h-5-font-family: "Archivo-Bold", Helvetica;
+    --h-5-font-size: 25px;
+    --h-5-font-style: normal;
+    --h-5-letter-spacing: 0px;
+    --h-5-line-height: 120.00000476837158%;
+    --h-6-font-family: "Archivo-Regular", Helvetica;
+    --h-6-font-size: 20px;
+    --h-6-font-style: normal;
+    --h-6-letter-spacing: 0px;
+    --h-6-line-height: 120.00000476837158%;
+    --h-7-font-family: "Archivo-Regular", Helvetica;
+    --h-7-font-size: 16px;
+    --h-7-font-style: normal;
+    --h-7-letter-spacing: 0px;
+    --h-7-line-height: 120.00000476837158%;
+    --h-8-font-family: "Archivo-Regular", Helvetica;
+    --h-8-font-size: 13px;
+    --h-8-font-style: normal;
+    --h-8-letter-spacing: 0px;
+    --h-8-line-height: 120.00000476837158%;
+    --h-9-font-family: "Archivo-Regular", Helvetica;
+    --h-9-font-size: 10px;
+    --h-9-font-style: normal;
+    --h-9-letter-spacing: 0px;
+    --h-9-line-height: 120.00000476837158%;
+
+    /* pesos */
+    --h-font-weight-Light: 300;
+    --h-font-weight-Regular: 400;
+    --h-font-weight-RegularItalic: 400;
+    --h-font-weight-Medium: 500;
+    --h-font-weight-Bold: 700;
+
     --shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
     --shadow-2xl: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
     --shadow-lg: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
@@ -117,291 +120,252 @@
     --shadow-xl: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
-
+/* fondo */
 body {
     font-family: 'Archivo', sans-serif;
-}
-
-.desktop{
-    align-items: center;
-    background-color: #f6f6f633;
+    background-color: var(--black-50-back);
     display: flex;
-    flex-direction: column;
-    gap: 80px;
-    min-height: 783px;
     max-width: 1900px;
-    padding: 80px 0px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.cont {
-    align-items: flex-start;
-    display: inline-flex;
-    flex: 0 0 auto;
+    padding: 40px 0px;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
-    justify-content: center;
-    position: relative;
-    width: 90%;
+    margin: 0;
 }
 
+/* header */
 .topic-info {
-    align-items: center;
     display: flex;
-    flex: 0 0 auto;
+    width: 90%;
+    align-items: center;
     gap: 10px;
-    padding: 0px 17.5px 0px 0px;
-    position: relative;
-    width: 100%;
 }
 
 .topic-info-topic {
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(180deg,
-            rgb(176, 176, 176) 0%,
-            rgb(136, 136, 136) 34.17%,
-            rgb(93, 93, 93) 62.81%,
-            rgb(79, 79, 79) 93.54%);
-    background-clip: text;
-    color: transparent;
+    text-align: center;
     font-family: var(--h-1-font-family);
     font-size: var(--h-1-font-size);
     font-style: var(--h-1-font-style);
-    font-weight: var(--h-1-font-weight);
-    letter-spacing: var(--h-1-letter-spacing);
+    font-weight: var(--h-font-weight-Bold);
     line-height: var(--h-1-line-height);
-    margin-top: -1px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
+
+    background: linear-gradient(16deg,
+            #B0B0B0 11.88%,
+            #888 34.4%,
+            #5D5D5D 53.27%,
+            #4F4F4F 73.52%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.design-component-instance-node {
-    flex: 0 0 auto !important;
-}
-
-.html {
-    align-items: first center;
-    background-color: #d53921;
+.block {
     border-radius: 40px;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 20px;
-    justify-content: center;
+    display: flex;
+    width: 90%;
     padding: 20px;
-    position: relative;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 40px;
+}
+
+/* div HTML */
+.block_html {
+    background-color: #d53921;
 }
 
 .html-logo {
-    align-items: center;
-    background-color: #e14515;
-    border-radius: 40px;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
+    background: var(--orange-600, #E14515);
 }
 
 .img {
     height: 150px;
-    object-fit: cover;
-    position: relative;
-    width: 150px;
+    align-self: stretch;
+
+
 }
 
 .text-wrapper {
-    color: #fffefe;
+    color: #FFFBFB;
+    text-align: center;
+    margin-top: -23px;
+
     font-family: var(--h-4-font-family);
     font-size: var(--h-4-font-size);
     font-style: var(--h-4-font-style);
-    font-weight: var(--h-4-font-weight);
-    letter-spacing: var(--h-4-letter-spacing);
+    font-weight: var(--h-font-weight-Bold);
     line-height: var(--h-4-line-height);
-    margin-top: -23px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    background-size: 4%;
 }
 
 .html-nav {
-    align-items: center;
-    
-    background-image: url(./assets/html.svg); 
-    background-size: 4%;
-
-    border-radius: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 55px 20px;
-    min-height: 164px;
-    justify-content: center;
-    position: relative;
+    background-image: url(./assets/html.svg);
 }
 
-.html-nav-mosaico{
+.nav_degradado {
+    list-style: none;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    align-content: center;
+    gap: 20px 55px;
+    height: 100%;
+    align-self: stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.html-nav-degradado {
     background: linear-gradient(180deg,
             rgba(61, 13, 13, 0.8) 0%,
             rgba(114, 32, 28, 0.8) 47.4%,
             rgba(141, 35, 31, 0.8) 100%);
-    border-radius: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 55px ;
-    min-height: 164px;
-    justify-content: center;
-    padding: 20px 20px;
-    position: relative;
-    margin: 0;
-    list-style: none;
 }
 
 
 .nav-link {
     text-decoration: none;
-    color: #ffffff;
+    color: #FFF;
+    text-align: center;
+
     font-family: var(--h-5-font-family);
     font-size: var(--h-5-font-size);
     font-style: var(--h-5-font-style);
-    font-weight: var(--h-5-font-weight);
+    font-weight: var(--h-font-weight-Bold);
     letter-spacing: var(--h-5-letter-spacing);
     line-height: var(--h-5-line-height);
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
 }
 
-.css {
-    align-items: center;
+/* div CSS */
+.block_css {
     background-color: #264de4;
-    border-radius: 40px;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    position: relative;
-    width: 100%;
 }
 
 .css-logo {
-    align-items: center;
     background-color: #2965f1;
-    border-radius: 40px;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
 }
 
 .css-nav {
-    align-items: center;
-
-    background-image: url(./assets/css.svg); 
-    background-size: 4%;
-
-    border-radius: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 55px 20px;
-    min-height: 164px;
-    justify-content: center;
-    position: relative;
-    
+    background-image: url(./assets/css.svg);
 }
 
-.css-nav-mosaico{
-    align-items: center;
+.css-nav-degradado {
     background: linear-gradient(180deg,
-    rgba(21, 35, 86, 0.8) 0%,
-    rgba(27, 56, 141, 0.8) 47.4%,
-    rgba(26, 60, 179, 0.8) 100%);
-    border-radius: 40px;
+            rgba(21, 35, 86, 0.8) 0%,
+            rgba(27, 56, 141, 0.8) 47.4%,
+            rgba(26, 60, 179, 0.8) 100%);
+}
+
+/* me quedé por aquí */
+.footer {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px 55px ;
-    min-height: 164px;
-    justify-content: center;
-    padding: 20px 20px;
-    position: relative;
-    margin: 0;
-    list-style: none;
+    width: 90%;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.copiright {
+.copyright {
     color: #4f4f4f;
+    /* h6-reg */
     font-family: "Archivo-Regular", Helvetica;
+    line-height: 120%;
     font-size: 20px;
+    font-style: normal;
     font-weight: 400;
-    letter-spacing: 0;
-    line-height: 10px;
-    margin-bottom: -27px;
-    position: relative;
-    text-align: center;
+    /* 24px */
 }
 
-/* Breakpoint mobile Responsive max768px */
+/* Breakpoint tablet Responsive max768px */
 @media(max-width:768px) {
-    .desktop{
-        gap: 20px;
+    body{
         padding: 20px 0px;
-        
+        gap: 20px;
     }
 
-    .cont {
-        gap: 20px;
+    .topic-info {
+        padding-right: 0px;
     }
 
     .topic-info-topic {
         font-size: var(--h-4-font-size);
+        align-self: center;
     }
 
-    .html {
-        align-items: first flex-start;
-        gap: 10px;
-        justify-content: center;
+    .block {
         padding: 10px;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 50px;
     }
 
     .img {
         height: 50px;
-        width: 50px;
-        margin: 2px  auto;
     }
-    
+
     .text-wrapper {
+        width: 50px;
+        height: 15px;
         font-size: var(--h-8-font-size);
+        font-weight: 400;
         margin-top: -5px;
     }
 
-    .css {
-        align-items: first flex-start;
-        gap: 10px;
-        justify-content: center;
-        padding: 10px;
+    .footer {
+        padding-top: 20px;
     }
+
+    .copyright {
+        text-align: center;
+        font-size: var(--h-7-font-size);
+    }
+
 }
+/* //REVIEW */
 /* Breakpoint mobile Responsive max425px */
 @media(max-width:425px) {
-    .html {
+    .block_html {
         flex-direction: column;
     }
 
-    .css {
+    .block_css {
         flex-direction: column;
     }
 
     .css-logo {
         width: 100%;
     }
+
     .html-logo {
         width: 100%;
     }
