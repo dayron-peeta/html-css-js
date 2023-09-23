@@ -364,7 +364,7 @@ body {
     }
     /*header*/
     .topic-info {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         justify-content: space-between;
         gap: 0;
         /**/
