@@ -382,6 +382,12 @@ body {
     .logo {
         width: 100%;
         flex-direction: row;
+        padding: 5px 0;
+    }
+
+    .img {
+        width: 35px;
+        height: 35px;
     }
 
     .text-wrapper {
