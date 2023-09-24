@@ -185,6 +185,7 @@ body {
     flex-shrink: 0;
     align-self: stretch;
     border-radius: 40px;
+    text-decoration: none;
 }
 
 /* //////////////////////////////// */

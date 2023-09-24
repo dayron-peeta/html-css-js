@@ -1,0 +1,421 @@
+:root {
+    /*COLORS*/
+    --black-100: rgba(231, 231, 231, 1);
+    --black-200: rgba(209, 209, 209, 1);
+    --black-300: rgba(176, 176, 176, 1);
+    --black-400: rgba(136, 136, 136, 1);
+    --black-50: #f6f6f6;
+    --black-50-back: rgba(246, 246, 246, 0.2);
+    --black-500: rgba(109, 109, 109, 1);
+    --black-600: rgba(93, 93, 93, 1);
+    --black-700: rgba(79, 79, 79, 1);
+    --black-800: rgba(69, 69, 69, 1);
+    --black-900: rgba(61, 61, 61, 1);
+    --black-950: rgba(0, 0, 0, 1);
+    --blue-ribbon100: rgba(218, 234, 255, 1);
+    --blue-ribbon200: rgba(189, 218, 255, 1);
+    --blue-ribbon300: rgba(144, 196, 255, 1);
+    --blue-ribbon400: rgba(92, 163, 254, 1);
+    --blue-ribbon50: rgba(239, 246, 255, 1);
+    --blue-ribbon500: rgba(54, 126, 251, 1);
+    --blue-ribbon600: rgba(41, 101, 241, 1);
+    --blue-ribbon700: rgba(24, 73, 221, 1);
+    --blue-ribbon800: rgba(26, 60, 179, 1);
+    --blue-ribbon900: rgba(27, 56, 141, 1);
+    --blue-ribbon950: rgba(21, 35, 86, 1);
+    --cerulean-blue100: rgba(220, 230, 253, 1);
+    --cerulean-blue200: rgba(193, 213, 252, 1);
+    --cerulean-blue300: rgba(150, 186, 250, 1);
+    --cerulean-blue400: rgba(101, 150, 245, 1);
+    --cerulean-blue50: rgba(240, 244, 254, 1);
+    --cerulean-blue500: rgba(65, 112, 240, 1);
+    --cerulean-blue600: rgba(38, 77, 228, 1);
+    --cerulean-blue700: rgba(35, 62, 210, 1);
+    --cerulean-blue800: rgba(35, 51, 170, 1);
+    --cerulean-blue900: rgba(33, 49, 135, 1);
+    --cerulean-blue950: rgba(25, 32, 82, 1);
+    --default-background: rgba(255, 255, 255, 1);
+    --orange-100: rgba(253, 233, 215, 1);
+    --orange-200: rgba(250, 207, 174, 1);
+    --orange-300: rgba(247, 172, 122, 1);
+    --orange-400: rgba(243, 128, 68, 1);
+    --orange-50: rgba(254, 245, 238, 1);
+    --orange-500: rgba(240, 101, 41, 1);
+    --orange-600: rgb(225, 69, 21);
+    --orange-700: rgba(186, 50, 20, 1);
+    --orange-800: rgba(148, 42, 24, 1);
+    --orange-900: rgba(119, 37, 23, 1);
+    --orange-950: rgba(64, 15, 10, 1);
+    --pomegranate-100: rgba(251, 229, 217, 1);
+    --pomegranate-200: rgba(246, 200, 178, 1);
+    --pomegranate-300: rgba(240, 163, 129, 1);
+    --pomegranate-400: rgba(233, 116, 78, 1);
+    --pomegranate-50: rgba(253, 244, 239, 1);
+    --pomegranate-500: rgba(227, 76, 38, 1);
+    --pomegranate-600: rgba(213, 57, 33, 1);
+    --pomegranate-700: rgba(177, 41, 29, 1);
+    --pomegranate-800: rgba(141, 35, 31, 1);
+    --pomegranate-900: rgba(114, 32, 28, 1);
+    --pomegranate-950: rgba(61, 13, 13, 1);
+
+    /*Fonts*/
+    --h-1-font-family: "Archivo-Bold", Helvetica;
+    --h-1-font-size: 61px;
+    --h-1-font-style: normal;
+    --h-1-letter-spacing: 0px;
+    --h-1-line-height: 120.00000476837158%;
+    --h-2-font-family: "Archivo-Regular", Helvetica;
+    --h-2-font-size: 49px;
+    --h-2-font-style: normal;
+    --h-2-letter-spacing: 0px;
+    --h-2-line-height: 120.00000476837158%;
+    --h-3-font-family: "Archivo-Regular", Helvetica;
+    --h-3-font-size: 39px;
+    --h-3-font-style: normal;
+    --h-3-letter-spacing: 0px;
+    --h-3-line-height: 120.00000476837158%;
+    --h-4-font-family: "Archivo-Regular", Helvetica;
+    --h-4-font-size: 31px;
+    --h-4-font-style: normal;
+    --h-4-letter-spacing: 0px;
+    --h-4-line-height: 120.00000476837158%;
+    --h-5-font-family: "Archivo-Bold", Helvetica;
+    --h-5-font-size: 25px;
+    --h-5-font-style: normal;
+    --h-5-letter-spacing: 0px;
+    --h-5-line-height: 120.00000476837158%;
+    --h-6-font-family: "Archivo-Regular", Helvetica;
+    --h-6-font-size: 20px;
+    --h-6-font-style: normal;
+    --h-6-letter-spacing: 0px;
+    --h-6-line-height: 120.00000476837158%;
+    --h-7-font-family: "Archivo-Regular", Helvetica;
+    --h-7-font-size: 16px;
+    --h-7-font-style: normal;
+    --h-7-letter-spacing: 0px;
+    --h-7-line-height: 120.00000476837158%;
+    --h-8-font-family: "Archivo-Regular", Helvetica;
+    --h-8-font-size: 13px;
+    --h-8-font-style: normal;
+    --h-8-letter-spacing: 0px;
+    --h-8-line-height: 120.00000476837158%;
+    --h-9-font-family: "Archivo-Regular", Helvetica;
+    --h-9-font-size: 10px;
+    --h-9-font-style: normal;
+    --h-9-letter-spacing: 0px;
+    --h-9-line-height: 120.00000476837158%;
+
+    /* pesos */
+    --h-font-weight-Light: 300;
+    --h-font-weight-Regular: 400;
+    --h-font-weight-RegularItalic: 400;
+    --h-font-weight-Medium: 500;
+    --h-font-weight-Bold: 700;
+
+    --shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    align-items: center;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+/* header */
+.html-card {
+    align-items: center;
+    align-self: stretch;
+    background: linear-gradient(180deg, rgb(213, 57, 33) 0%, rgba(225, 69, 21, 0.2) 77.6%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.html-logo {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    justify-content: center;
+}
+
+.html-logo-text {
+    color: #fffefe;
+    font-family: var(--h6-reg-font-family);
+    font-size: var(--h6-reg-font-size);
+    font-style: var(--h6-reg-font-style);
+    font-weight: var(--h6-reg-font-weight);
+    letter-spacing: var(--h6-reg-letter-spacing);
+    line-height: var(--h6-reg-line-height);
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.html-logo-logo {
+    height: 35px;
+    margin-left: -5px;
+    object-fit: cover;
+    position: relative;
+    width: 35px;
+}
+
+.text {
+    align-self: stretch;
+    color: #000000;
+    font-family: var(--h-8-font-family);
+    font-size: var(--h-8-font-size);
+    font-style: var(--h-8-font-style);
+    font-weight: var(--h-8-font-weight);
+    letter-spacing: var(--h-8-letter-spacing);
+    line-height: var(--h-8-line-height);
+    margin-bottom: -10px;
+    position: relative;
+}
+
+.frame {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.section {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 5px;
+    position: relative;
+    width: 100%;
+}
+
+.frame-title {
+    align-items: flex-start;
+    align-self: stretch;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.rectangle {
+    background-color: #b1291d40;
+    border-radius: 40px;
+    height: 8px;
+    left: 25px;
+    position: absolute;
+    top: 12px;
+    width: 239px;
+}
+
+.section-title {
+    color: #000000;
+    flex: 1;
+    font-family: var(--h7-medium-font-family);
+    font-size: var(--h7-medium-font-size);
+    font-style: var(--h7-medium-font-style);
+    font-weight: var(--h7-medium-font-weight);
+    letter-spacing: var(--h7-medium-letter-spacing);
+    line-height: var(--h7-medium-line-height);
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+}
+
+.div {
+    align-self: stretch;
+    color: transparent;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 15.6px;
+    position: relative;
+}
+
+.text-wrapper {
+    color: #000000;
+    font-family: var(--h-8-font-family);
+    font-size: var(--h-8-font-size);
+    font-style: var(--h-8-font-style);
+    font-weight: var(--h-8-font-weight);
+    letter-spacing: var(--h-8-letter-spacing);
+    line-height: var(--h-8-line-height);
+}
+
+.span {
+    color: #000000;
+    font-family: var(--h-9-font-family);
+    font-size: var(--h-9-font-size);
+    font-style: var(--h-9-font-style);
+    font-weight: var(--h-9-font-weight);
+    letter-spacing: var(--h-9-letter-spacing);
+    line-height: var(--h-9-line-height);
+}
+
+.text-wrapper-2 {
+    color: #72201c;
+    font-family: var(--h-8-font-family);
+    font-size: var(--h-8-font-size);
+    font-style: var(--h-8-font-style);
+    font-weight: var(--h-8-font-weight);
+    letter-spacing: var(--h-8-letter-spacing);
+    line-height: var(--h-8-line-height);
+}
+
+.text-wrapper-3 {
+    color: #d53921;
+    font-family: var(--h-9-font-family);
+    font-size: var(--h-9-font-size);
+    font-style: var(--h-9-font-style);
+    font-weight: var(--h-9-font-weight);
+    letter-spacing: var(--h-9-letter-spacing);
+    line-height: var(--h-9-line-height);
+}
+
+.text-wrapper-4 {
+    color: #1f1f1f;
+    font-family: var(--h-8-font-family);
+    font-size: var(--h-8-font-size);
+    font-style: var(--h-8-font-style);
+    font-weight: var(--h-8-font-weight);
+    letter-spacing: var(--h-8-letter-spacing);
+    line-height: var(--h-8-line-height);
+}
+
+.text-wrapper-5 {
+    color: #1f1f1f;
+    font-family: var(--h-9-font-family);
+    font-size: var(--h-9-font-size);
+    font-style: var(--h-9-font-style);
+    font-weight: var(--h-9-font-weight);
+    letter-spacing: var(--h-9-letter-spacing);
+    line-height: var(--h-9-line-height);
+}
+
+.text-wrapper-6 {
+    color: #1f1f1f;
+    font-family: var(--h9-light-font-family);
+    font-size: var(--h9-light-font-size);
+    font-style: var(--h9-light-font-style);
+    font-weight: var(--h9-light-font-weight);
+    letter-spacing: var(--h9-light-letter-spacing);
+    line-height: var(--h9-light-line-height);
+}
+
+.text-wrapper-7 {
+    color: #299227;
+    font-family: var(--h9-light-font-family);
+    font-size: var(--h9-light-font-size);
+    font-style: var(--h9-light-font-style);
+    font-weight: var(--h9-light-font-weight);
+    letter-spacing: var(--h9-light-letter-spacing);
+    line-height: var(--h9-light-line-height);
+}
+
+.text-wrapper-8 {
+    color: #000000;
+    font-family: var(--h9-light-font-family);
+    font-size: var(--h9-light-font-size);
+    font-style: var(--h9-light-font-style);
+    font-weight: var(--h9-light-font-weight);
+    letter-spacing: var(--h9-light-letter-spacing);
+    line-height: var(--h9-light-line-height);
+}
+
+.text-wrapper-9 {
+    color: #000000;
+    font-family: var(--h4-reg-font-family);
+    font-size: var(--h4-reg-font-size);
+    font-style: var(--h4-reg-font-style);
+    font-weight: var(--h4-reg-font-weight);
+    letter-spacing: var(--h4-reg-letter-spacing);
+    line-height: var(--h4-reg-line-height);
+}
+
+.text-wrapper-10 {
+    color: #000000;
+    font-family: var(--h5-reg-font-family);
+    font-size: var(--h5-reg-font-size);
+    font-style: var(--h5-reg-font-style);
+    font-weight: var(--h5-reg-font-weight);
+    letter-spacing: var(--h5-reg-letter-spacing);
+    line-height: var(--h5-reg-line-height);
+}
+
+.text-wrapper-11 {
+    color: #000000;
+    font-family: var(--h6-reg-font-family);
+    font-size: var(--h6-reg-font-size);
+    font-style: var(--h6-reg-font-style);
+    font-weight: var(--h6-reg-font-weight);
+    letter-spacing: var(--h6-reg-letter-spacing);
+    line-height: var(--h6-reg-line-height);
+}
+
+.text-wrapper-12 {
+    color: #000000;
+    font-family: var(--h-7-font-family);
+    font-size: var(--h-7-font-size);
+    font-style: var(--h-7-font-style);
+    font-weight: var(--h-7-font-weight);
+    letter-spacing: var(--h-7-letter-spacing);
+    line-height: var(--h-7-line-height);
+}
+
+.text-wrapper-13 {
+    color: #299227;
+    font-family: var(--h-9-font-family);
+    font-size: var(--h-9-font-size);
+    font-style: var(--h-9-font-style);
+    font-weight: var(--h-9-font-weight);
+    letter-spacing: var(--h-9-letter-spacing);
+    line-height: var(--h-9-line-height);
+}
+
+.ellipse {
+    height: 817px;
+    left: 249px;
+    position: absolute;
+    top: 0;
+    width: 71px;
+}
+
+.img {
+    height: 817px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 79px;
+}
