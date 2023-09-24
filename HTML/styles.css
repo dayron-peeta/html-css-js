@@ -165,7 +165,7 @@ body {
     font-family: var(--h6-reg-font-family);
     font-size: var(--h6-reg-font-size);
     font-style: var(--h6-reg-font-style);
-    font-weight: var(--h6-reg-font-weight);
+    font-weight: var(--h-font-weight-Regular);
     letter-spacing: var(--h6-reg-letter-spacing);
     line-height: var(--h6-reg-line-height);
     position: relative;
