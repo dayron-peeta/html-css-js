@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- fonts Archivo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header class="html-card header">
+        <div class="html-logo header_logo">
+            <div class="html-logo-text header__logo--text">html</div>
+            <img class="html-logo-logo header__logo--logo" alt="Html logo logo" src="../assets/html.svg" />
+        </div>
+        <p class="text header_text">
+            HTML5 es la última versión del lenguaje de marcado HTML (HyperText Markup Language). Es un estándar
+            utilizado
+            para estructurar y presentar el contenido de las páginas web en Internet.
+        </p>
+    </header>
+
+    <!-- CARDS -->
+    <div class="frame_body">
+
+        <div class="section">
+
+            <div class="section_title">
+                <div class="rectangle"> </div>
+                <div class="section__title--text">Etiquetas</div>
+                <div class="rectangle"></div>
+            </div>
+
+            
+
+            <p class="section-text">
+                <span class="text-wrapper">
+                    Existen dos tipos de etiquetas
+                    <br />
+                    <br />
+                    1&nbsp;&nbsp;De apertura y cierre
+                </span>
+                <span class="span">
+                    {" "}
+                    (normalmente encierran contenido)
+                    <br />
+                </span>
+                <span class="text-wrapper-2">
+                    &lt;a&gt; hola &lt;/a&gt;
+                    <br />
+                </span>
+                <span class="text-wrapper">
+                    <br />
+                    2&nbsp;&nbsp;De cierre automático{" "}
+                </span>
+                <span class="span">
+                    (no llevan contenido pero si atributos los cuales se separan por un espacio )<br />
+                </span>
+                <span class="text-wrapper-2">&lt;img url=”img.jpg” /&gt;</span>
+                <span class="text-wrapper-2">&nbsp;</span>
+                <span class="span">
+                    {" "}
+                    la diagonal del final no es obligatoria
+                    <br />
+                    <br />
+                </span>
+                <span class="text-wrapper">
+                    Documentación oficial de html5 de Mozilla
+                    <br />
+                </span>
+                <span class="text-wrapper-3">
+                    https://developer.mozilla.org/es/docs/orphaned/Web/HTML/Inline_elements
+                    <br />
+                </span>
+                <span class="text-wrapper-3">
+                    <br />
+                </span>
+                <span class="text-wrapper-4">
+                    Estructura de las etiquetas:
+                    <br />
+                </span>
+                <span class="text-wrapper-5">&nbsp;</span>
+                <span class="text-wrapper-6">
+                    &lt;nombre de la etiqueta&nbsp;&nbsp;atrib1:”val”&nbsp;&nbsp;atrib2:”val”&gt;&nbsp;&nbsp; <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contenido
+                    <br />
+                    &lt;/nombre de la etiqueta&gt;&nbsp;&nbsp;
+                    <br />
+                </span>
+                <span class="text-wrapper-5">
+                    <br />
+                </span>
+                <span class="text-wrapper-4">
+                    Estructura base de HTML5:
+                    <br />
+                </span>
+                <span class="text-wrapper-5">&lt;!DOCTYPE html&gt;</span>
+                <span class="text-wrapper-6"> //</span>
+                <span class="text-wrapper-7">
+                    indica al navegador q s está usando HTML5
+                    <br />
+                </span>
+                <span class="text-wrapper-5">&lt;html lang=&#34;en&#34;&gt;</span>
+                <span class="text-wrapper-6">&nbsp;&nbsp;//</span>
+                <span class="text-wrapper-7">
+                    etiqueta raíz -lang define el lenguaje
+                    <br />
+                </span>
+                <span class="text-wrapper-5">&lt;head&gt;</span>
+                <span class="text-wrapper-6"> //</span>
+                <span class="text-wrapper-7">
+                    aquí van los metadatos (recursos informativos o de utilidad -nombre -descripción -íconos etc)
+                    <br />
+                </span>
+                <span class="text-wrapper-5">&lt;meta charset=&#34;UTF-8&#34;&gt;</span>
+                <span class="text-wrapper-6"> //</span>
+                <span class="text-wrapper-7">
+                    permite agregar caracteres especiales -ñ -á etc
+                    <br />
+                </span>
+                <span class="text-wrapper-5">
+                    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+                </span>
+                <span class="text-wrapper-6"> //</span>
+                <span class="text-wrapper-7">
+                    para adaptarla a dispositivos móviles
+                    <br />
+                </span>
+                <span class="text-wrapper-5">&lt;title&gt;Document&lt;/title&gt;</span>
+                <span class="text-wrapper-6"> //</span>
+                <span class="text-wrapper-7">
+                    título de la pág q se muestra en el nav
+                    <br />
+                </span>
+                <span class="text-wrapper-5">
+                    &lt;link rel=&#34;stylesheet&#34; href=&#34;./prueba.css&#34;&gt;
+                    <br />
+                    &lt;/head&gt;
+                    <br />
+                    &lt;body&gt;
+                    <br />
+                    &lt;/body&gt;
+                    <br />
+                    &lt;/html&gt;
+                    <br />
+                </span>
+                <span class="text-wrapper-6">
+                    <br />
+                </span>
+                <span class="text-wrapper">&lt;!-- </span>
+                <span class="text-wrapper-7">
+                    así se hace un comentario en HTML, lo que esté contenido aquí no aparecerá en el navegador{" "}
+                </span>
+                <span class="text-wrapper">
+                    {" "}
+                    --&gt; <br />
+                </span>
+                <span class="text-wrapper-6">
+                    <br />
+                </span>
+                <span class="text-wrapper-4">
+                    Las etiquetas estructuran la información basándose es su semántica y jerarquía
+                    <br />
+                </span>
+                <span class="span">
+                    Existen etiquetas con funciones específicas
+                    <br />
+                </span>
+                <span class="text-wrapper-8">
+                    <br />
+                </span>
+                <span class="text-wrapper">Las etiquetas pueden anidarse </span>
+                <span class="span">
+                    (ponerse unas dentro de otras)
+                    <br />
+                    En este sitio podrás consultar si una etiqueta puede ir dentro de otra:{" "}
+                </span>
+                <a href="https://canincluede.glitch.me/" rel="noopener noreferrer" target="_blank">
+                    <span class="text-wrapper-3">https://canincluede.glitch.me/</span>
+                </a>
+                <span class="text-wrapper-3">&nbsp;</span>
+            </p>
+        </div>
+
+    
+    
+        <div class="section">
+
+            <div class="section_title">
+                <div class="section__title--text">Etiquetas de Textos</div>
+                <!-- <div class="rectangle" /> -->
+            </div>
+
+            <p class="section-text">
+                <span class="text-wrapper">Etiquetas heading o de encabezado</span>
+                <span class="text-wrapper-8">
+                    {" "}
+                    (generalmente son títulos y determinan jerarquía )<br />
+                </span>
+                <span class="text-wrapper">
+                    <br />
+                </span>
+                <span class="text-wrapper-7">
+                    solo debe haber 1 etiqueta H1 por documento y esta representa el título principal de nuestro
+                    documento
+                    <br />
+                </span>
+                <span class="text-wrapper-9">
+                    &lt;h1&gt; Título 1 &lt;/h1&gt;
+                    <br />
+                </span>
+                <span class="text-wrapper-10">
+                    &lt;h2&gt; Título 2 &lt;/h2&gt;
+                    <br />
+                </span>
+                <span class="text-wrapper-11">
+                    &lt;h3&gt; Título 3 &lt;/h3&gt;
+                    <br />
+                </span>
+                <span class="text-wrapper-12">
+                    &lt;h4&gt; Título 4 &lt;/h4&gt;
+                    <br />
+                </span>
+                <span class="text-wrapper">
+                    &lt;h5&gt; Título 5 &lt;/h5&gt;
+                    <br />
+                </span>
+                <span class="span">
+                    &lt;h6&gt; Título 6 &lt;/h6&gt;
+                    <br />
+                    <br />
+                </span>
+                <span class="text-wrapper">Etiquetas de estilo</span>
+                <span class="text-wrapper-8">
+                    {" "}
+                    (con y sin valor semántico)
+                    <br />
+                </span>
+                <span class="span">
+                    <br /> &lt;hr&gt; //
+                </span>
+                <span class="text-wrapper-7">
+                    representa un cambio de tema y visualmente genera una línea vertical
+                    <br />
+                </span>
+                <span class="span">&lt;br&gt; //</span>
+                <span class="text-wrapper-7">
+                    salto de línea
+                    <br />
+                    <br />
+                </span>
+                <span class="text-wrapper-13">&nbsp;</span>
+                <span class="span">&lt;em&gt; itálica &lt;/em&gt; //</span>
+                <span class="text-wrapper-7">
+                    tiene valor semántico
+                    <br />
+                </span>
+                <span class="span">&lt;i&gt; itálica &lt;/i&gt; //</span>
+                <span class="text-wrapper-7">
+                    solo visual <br />
+                </span>
+                <span class="span">
+                    <br />
+                    &lt;strong&gt; strong &lt;/strong&gt;&nbsp;&nbsp;//
+                </span>
+                <span class="text-wrapper-7">
+                    tiene valor semántico <br />
+                </span>
+                <span class="span">&lt;b&gt; strong &lt;/b&gt; //</span>
+                <span class="text-wrapper-7">
+                    solo visual
+                    <br />
+                </span>
+                <span class="span">
+                    <br />
+                    &lt;u&gt;subrayado&lt;/u&gt;
+                    <br />
+                    &lt;small&gt;más pequeño&lt;/small&gt;
+                    <br />
+                    &lt;mark&gt;resaltado&lt;/mark&gt;&nbsp;&nbsp;//
+                </span>
+                <span class="text-wrapper-7">
+                    tiene valor semántico <br />
+                </span>
+                <span class="span">
+                    &lt;s&gt;lo tacha&lt;/s&gt;
+                    <br />
+                    &lt;cite&gt;hacer una cita(tema-autor)&lt;/cite&gt;
+                    <br />A &lt;sup&gt;superíndice&lt;/sup&gt;
+                    <br />A &lt;sub&gt;subíndice&lt;/sub&gt;
+                    <br />
+                    <br />
+                    &lt;span&gt; texto dentro del span &lt;/span&gt; //contenedor de elementos en línea, permite dar
+                    formato
+                    desde el CSS
+                </span>
+            </p>
+        </div>
+    </div>
+    <!-- <img class="ellipse" alt="Ellipse" src="ellipse-1.png" />
+    <img class="img" alt="Ellipse" src="ellipse-2.png" /> -->
+
+
+
+</body>
+
+</html>
