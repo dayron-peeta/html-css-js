@@ -7,7 +7,7 @@ body{
     color: white;
 }
 
-.elements{
+.element{
     width: 50%;
     height: 200px;
     background-color: green;
@@ -36,12 +36,12 @@ body{
 /*max-width, min-width*/
 
 @media(max-width: 800px){
-    .elements{
+    .element{
         background-color: rgb(249, 106, 158);
     }
 } 
 @media(max-width: 600px){
-    .elements{
+    .element{
         background-color: rgb(231, 30, 104);
     }
 }

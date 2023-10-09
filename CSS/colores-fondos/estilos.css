@@ -25,16 +25,16 @@ body{
 }
 .main__title{
     background-color: #00800012;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /*permite definir la separación entre palabras*/
     word-spacing: 5px;
-    overflow-wrap: break-word;
-    /* text-transform: lowercase; */
-    /* text-transform: uppercase; */
-    text-transform: capitalize; 
-    text-align: center;
+    overflow-wrap: break-word; /*rompe las palabras para evitar que se desborden*/
+    /* text-transform: lowercase; */ /*ponerlas todas en minúsculas*/
+    /* text-transform: uppercase; */ /*permite transformar el texto (todas a mayúsculas)*/
+    text-transform: capitalize; /*hace que cada palabra comience en mayúscula*/
+    text-align: center; /*permite centrar el texto, también se le pueden dar los valores start para alinearlo a la izquierda o end para alinearlo a la derecha*/
     /* text-align: start; */
     /* text-align: end; */
-    font-size: 30px;
+    font-size: 30px; /*para controlar el tamaño del texto*/
     font-weight: 900;
 }
 
@@ -42,11 +42,12 @@ body{
     background-color: rgba(128, 0, 128, 0.263);
     /* text-align: justify; */
     text-align: left;
-    line-height: 1;
+    line-height: 1; /*determina el alto de la línea (aquí acepta unidades enteras o píxeles, si multiplicamos las unidades enteras por el font size obtenemos el valor en píxeles)*/
     font-size: 18px;
     text-shadow: rgb(36, 1, 36); 
     margin: 20px 0;
 }
+
 
 .main__paragraph--second{
     font-weight: 400;
@@ -56,10 +57,9 @@ body{
     display: inline-block;
     background-color: orange;
     color: white;
-    text-decoration: none;
+    text-decoration: none; /*se puede usar para quitar el subrayado de los enlaces*/
     padding: 20px 60px;
-    /* permite redondear el borde de contenedores 50px es el mayor valor */
-    border-radius: 10px;
+    border-radius: 10px; /* permite redondear el borde de contenedores 50px es el mayor valor */
 }
 
 .title{

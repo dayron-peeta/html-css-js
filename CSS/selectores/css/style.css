@@ -54,3 +54,7 @@ ul li{
     color: white;
     padding: 20px 40px;
 }
+
+.uno, .dos, #tres{
+    color: blue;
+}
