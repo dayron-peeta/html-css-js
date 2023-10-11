@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primera web con JS</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script defer>
+        // puede ir también dentro del head usando el atributo defer para garantizar que se cargue todo el código HTML y luego el script
+        alert('se ejecuta desde el head!')//muestra una alerta
+    </script>
+    <script defer src="./holaMundo.js"> //cargando el js desde un archivo externo RECOMENDADO</script>
+</head>
+<body>
+    
+<h1 class="t">Hola mundo!</h1>
+
+<!-- JS es sensible a mayúsculas y minúsculas
+se debe respetar la sintaxis camel case  getElementById -->
+
+<!-- etiqueta script -->
+<script> /*va dentro del body(antes de la etiqueta de cierre) y debe llamarse luego de cargar todos los elementos dentro de él, porque accederemos a ellos */
+//esto es un comentario de línea en JS
+/*esto es un comentario de bloque en JS*/
+    document.write('Hola mundo!')//escribe texto en el documento
+    document.write('<h2>Hola mundo!</h2>')//también podemos añadir etiquetas
+    alert('hola soy una alerta!')//muestra una alerta
+    console.log('Hola desde la consola') //permite acceder a la consola y hacer un log (escribir algo)
+    //la consola se abre presionando F12 en el navegador
+</script>
+</body>
+</html>
