@@ -16,8 +16,8 @@ if(usuario.pais === 'USA'){
     console.log('el usuario no es mexicano ni americano')
 }
 
+ //anidar condicional
 if (usuario.edad > 17) {
-    //anidar condicional
     if (usuario.ticket > 17) {
         console.log("el usuario es mayor de edad y tiene ticket")
     } else {
