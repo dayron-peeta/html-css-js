@@ -4,7 +4,7 @@ const fetchPost = () => {
         const error = true;
 
         if(error){ reject('fracasó')
-        } else { resolve({posts, mensaje:'éxito'})} //con varios valores, debes devolver un objeto o un arreglo en lugar de pasar múltiples argumentos a la función `resolve()`
+        } else { resolve({mensaje:'éxito', posts})} //con varios valores, debes devolver un objeto o un arreglo en lugar de pasar múltiples argumentos a la función `resolve()`
     })
 }
 
