@@ -32,7 +32,7 @@ class Moderador extends Usuario{ //extends define de que clase heredará sus pro
 const usuario = new Usuario('Pepe' , '1234')
 console.log(usuario.obtenerPosts())
 
-const usuario2 = new Moderador('Arturo','456',['borrar','editar'] )
-console.log(usuario2.obtenerPosts())
-console.log(usuario2.permisos)
-usuario2.borrarPost(7)
+const usuario2 = new Moderador('Arturo','456',['borrar','editar'] ) //al llamarlo se pasan los nuevos parametros requeridos por esta nueva clase
+console.log(usuario2.obtenerPosts()) //se puede acceder a los métodos de la clase padre
+console.log(usuario2.permisos) //a los atributos de la nueva
+usuario2.borrarPost(7) //y a sus métodos específicos
