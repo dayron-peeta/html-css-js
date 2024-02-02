@@ -18,6 +18,6 @@ class Usuario{
 }
 
 const usuario = new Usuario('Pepe', 'Pérez') //creando un nuevo obj El método constructor se ejecuta de forma automática al usar la palabra 'new'
-console.log(usuario)
-console.log(usuario.nombre)
-console.log(usuario.obtenerNombreCompleto())
+console.log(usuario) //podemos acceder al objeto creado
+console.log(usuario.nombre) //a una de sus propiedades
+console.log(usuario.obtenerNombreCompleto()) //o a uno de sus métodos
