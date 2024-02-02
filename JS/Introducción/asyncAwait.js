@@ -20,7 +20,6 @@ const mostrarPost = async() => { //se declara la función como asincrona
     } catch(error){
         console.log(error)
     }
-    
 }
 
-mostrarPost()
+mostrarPost() //finalmente se llama a la función
