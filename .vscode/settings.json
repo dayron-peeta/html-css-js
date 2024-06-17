@@ -10,5 +10,6 @@
         "Paola",
         "reutilizable",
         "rollupjs"
-    ]
+    ],
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell"
 }
